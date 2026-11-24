@@ -1,41 +1,121 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-ul {
+nav.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background: navy;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    display: flex;
+    z-index: 1000;
 }
 
-li {
-    float: left;
-}
-
-li a {
+nav.navbar li a {
     display: block;
-    color: aquamarine;
-    text-align: center;
+    color: white;
     padding: 14px 16px;
-    text-decoration: none
+    text-decoration: none;
 }
 
-li a:hover{
+nav.navbar li a:hover {
     background: lime;
-    color:beige
+    color: black;
 }
 
-li a.active{
-    background: navajowhite;
-    color: cadetblue;
+nav.navbar li a.active {
+    background: #3fe1bd;
+    color: black;
 }
 
-H1{
-    margin-top: 50px;
+.wadah-utama {
+    margin-top: 60px;
+}
+
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #cbd5e1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header-halaman {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+.header-halaman h1 {
+    color: navy;
+    margin: 0 0 10px 0;
+}
+
+.baris {
+    display: flex;
+    gap: 20px;
+}
+
+.kolom {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.kiri {
+    flex: 25%;
+}
+
+.tengah {
+    flex: 50%;
+}
+
+.kanan {
+    flex: 25%;
+}
+
+.kolom img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
 }
